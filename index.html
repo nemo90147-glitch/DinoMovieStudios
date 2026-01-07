@@ -5,58 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino Movie Studios - Official Website</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.png" type="image/png"> </head>
+    <style>
+        /* إضافة تنعيم للحركة عند الضغط على الأزرار */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
 <body>
     <header>
         <div class="container">
-            <a href="index.html" class="logo">Dino Movie Studios</a>
+            <a href="#home" class="logo">Dino Movie Studios</a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="work.html">Our Work</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#vision">Our Vision</a></li>
+                    <li><a href="#work">Our Work</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero" style="background-image: url('images/hero-bg.jpg');">
+        <section id="home" class="hero" style="background-image: url('images/hero-bg.jpg');">
             <div class="hero-content">
                 <h1>Dino Movie Studios</h1>
                 <p>Unleashing Prehistoric Epic Adventures Through Animation.</p>
-                <a href="work.html" class="btn">Discover Our Latest Work</a>
+                <a href="#work" class="btn">Discover Our Work</a>
             </div>
         </section>
 
-        <section class="about-preview container">
+        <section id="vision" class="about-preview container">
             <h2>Our Vision</h2>
             <p>At Dino Movie Studios, we are pioneers of dialogue-free, atmospheric visual storytelling. Founded by filmmaker Malek Mohamed, our studio is dedicated to crafting immersive animated experiences that transcend language barriers and captivate global audiences.</p>
-            <a href="about.html" class="btn secondary">Learn More About Us</a>
         </section>
 
-        <section class="featured-work container">
-            <h2>Featured Project</h2>
+        <section id="work" class="featured-work container">
+            <h2>Our Work</h2>
             <div class="project-card">
                 <img src="images/pentagram-poster.jpg" alt="The Legendary Pentagram: Cretaceous Period Poster">
                 <h3>The Legendary Pentagram: Cretaceous Period</h3>
                 <p>An epic independent silent animation series from Egypt, showcasing a raw survival story of five dinosaur factions. A groundbreaking 2D/3D hybrid cinematic experience.</p>
-                <a href="work.html" class="btn">Watch Trailer</a>
+                <a href="https://www.youtube.com/watch?v=7jtr0nLtako" target="_blank" class="btn">Watch Trailer</a>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Dino Movie Studios. All rights reserved.</p>
+            <p>&copy; 2026 Dino Movie Studios. All rights reserved.</p>
             <div class="social-links">
-                <a href="https://www.imdb.com/title/ttXXXXXXX/" target="_blank">IMDb</a>
-                <a href="https://www.youtube.com/channel/YOUR_YOUTUBE_CHANNEL_ID" target="_blank">YouTube</a>
-                </div>
+                <a href="https://www.youtube.com/@DinoMovieStudios" target="_blank">YouTube</a>
+            </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
