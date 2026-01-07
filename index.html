@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dino Movie Studios - Official Website</title>
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
     <link rel="stylesheet" href="style.css">
+    
     <style>
-        /* إضافة تنعيم للحركة عند الضغط على الأزرار */
+        /* تنعيم الحركة عند الانتقال بين الأقسام */
         html { scroll-behavior: smooth; }
+        
+        /* ضبط حجم اللوجو في الهيدر */
+        .logo img {
+            height: 60px; /* يمكنك تعديل الرقم ده حسب حجم لوجو دينو موفي بتاعك */
+            width: auto;
+            vertical-align: middle;
+            display: block;
+        }
+        
+        /* ستايل إضافي للتأكد من أن الصور تظهر بشكل جيد */
+        .project-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <a href="#home" class="logo">Dino Movie Studios</a>
+            <a href="#home" class="logo">
+                <img src="images/dino-logo.png" alt="Dino Movie Studios Logo">
+            </a>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
@@ -25,7 +47,7 @@
     </header>
 
     <main>
-        <section id="home" class="hero" style="background-image: url('images/hero-bg.jpg');">
+        <section id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-bg.jpg');">
             <div class="hero-content">
                 <h1>Dino Movie Studios</h1>
                 <p>Unleashing Prehistoric Epic Adventures Through Animation.</p>
